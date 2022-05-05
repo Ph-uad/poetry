@@ -42,6 +42,8 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -134,12 +136,12 @@ svg {
 }
 .works-carousel {
   align-items: center;
-  margin: 0 auto;
+  margin: 10% auto;
   overflow-x: hidden;
   gap: 5rem;
 }
 .works-carousel__image {
-  width: 25%;
+  width: 30%;
 }
 @media (max-width: 60em) {
   .works-carousel__image {
@@ -183,6 +185,14 @@ section {
   grid-template-rows: auto;
   align-items: center;
   justify-content: center;
+}
+
+.heading-primary {
+  font-size: 5rem;
+}
+
+.paragraph {
+  font-size: 2rem;
 }
 
 .flex {

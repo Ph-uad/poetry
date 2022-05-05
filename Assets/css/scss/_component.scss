@@ -62,22 +62,19 @@
 
     @media (max-width:60em) {
         & {
-
             align-content: center;
-
         }
-
     }
 
 
     &-carousel {
         align-items: center;
-        margin: 0 auto;
+        margin: 10% auto;
         overflow-x: hidden;
         gap: 5rem;
 
         &__image {
-            width: 25%;
+            width: 30%;
             @media (max-width:60em) {
                 & {
                     width: 50%;
