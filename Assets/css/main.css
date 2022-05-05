@@ -1,0 +1,160 @@
+*, *:before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+@media (min-width: 77em) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 60em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 55em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dancing Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  text-align: center;
+}
+
+path {
+  stroke: black;
+}
+
+svg {
+  display: inline-block;
+  height: 100%;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  background: var(--color-2);
+  z-index: 10;
+}
+.nav-logo {
+  font-family: cursive;
+}
+
+.header {
+  padding: 10rem;
+}
+.header-container {
+  align-items: center;
+  position: relative;
+}
+.header-container > div:last-child {
+  margin-top: 40%;
+}
+.header-gallery {
+  width: 30%;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+.header-gallery__img {
+  width: 100%;
+}
+.header-paragraph {
+  background-color: rgba(255, 255, 255, 0.4549019608);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+.works {
+  display: grid;
+  grid-template-rows: auto;
+  align-content: flex-end;
+}
+.works-carousel {
+  align-items: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  gap: 5rem;
+}
+.works-carousel__image {
+  width: 25%;
+}
+
+.fair {
+  width: 100vw;
+  justify-content: normal;
+}
+.fair-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50vw;
+  padding: 10rem 12rem;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-2);
+}
+
+section {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

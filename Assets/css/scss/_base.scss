@@ -1,0 +1,78 @@
+
+
+*,*:before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+
+    @media (min-width:77em) {
+        &{
+            font-size: 80%;
+        }
+    }
+    @media (max-width:60em) {
+        &{
+            font-size: 60%;
+        }
+    }
+    @media (max-width:55em) {
+        &{
+            font-size: 55%;
+        }
+    }
+    @media (max-width:50em) {
+        &{
+            font-size: 50%;
+        }
+    }
+    @media (max-width:40em) {
+        &{
+            font-size: 40%;
+        }
+    }
+    @media (max-width:30em) {
+        &{
+            font-size: 30%;
+        }
+    }
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Dancing Script', cursive;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.fixed{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    text-align: center;
+}
+
+path{
+    stroke: black;
+}
+
+svg{
+    display: inline-block;
+    height: 100%;
+}
+
