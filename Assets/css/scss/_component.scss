@@ -104,7 +104,10 @@
 
         @media (max-width:60em) {
             & {
+                width: 80vw;
                 padding: 10rem 2rem;
+                background-color: #ffffff74;
+                backdrop-filter: blur(7px);
             }
     
         }

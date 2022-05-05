@@ -161,7 +161,11 @@ svg {
 }
 @media (max-width: 60em) {
   .fair-container {
+    width: 80vw;
     padding: 10rem 2rem;
+    background-color: rgba(255, 255, 255, 0.4549019608);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
   }
 }
 
