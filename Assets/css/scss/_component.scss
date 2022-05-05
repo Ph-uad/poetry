@@ -15,6 +15,8 @@
 
 //header
 .header {
+    display: flex;
+    justify-content: center;
     padding: 10rem;
 
     &-container {
@@ -22,59 +24,80 @@
         // grid-template-columns: 60% 30%;
         align-items: center;
         position: relative;
-        
+
 
         &>div:last-child {
             margin-top: 40%;
         }
+
+        @media (max-width:60em) {
+            & {
+                flex-wrap: wrap;
+            }
+        }
     }
 
-    &-gallery{
+    &-gallery {
         width: 30%;
         align-self: flex-start;
         position: sticky;
         top: 0%;
-  
 
-        &__img{
+
+        &__img {
             width: 100%;
         }
     }
 
-    &-paragraph{
+    &-paragraph {
         background-color: #ffffff74;
         backdrop-filter: blur(7px);
     }
 }
 
-.works{
-   display: grid;
-   grid-template-rows: auto;
-   align-content: flex-end;
-   
+.works {
+    display: grid;
+    grid-template-rows: auto;
+    align-content: flex-end;
 
-    &-carousel{
+    @media (max-width:60em) {
+        & {
+
+            align-content: center;
+
+        }
+
+    }
+
+
+    &-carousel {
         align-items: center;
         margin: 0 auto;
         overflow-x: hidden;
         gap: 5rem;
 
-        &__image{
+        &__image {
             width: 25%;
+            @media (max-width:60em) {
+                & {
+                    width: 50%;
+                }
+        
+            }
         }
     }
 }
 
-.fair{
+.fair {
     width: 100vw;
-    justify-content:normal;
- 
+    justify-content: normal;
 
-    &-container{
+
+    &-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-       height: 100%;
+        height: 100%;
 
         width: 50vw;
         padding: 10rem 12rem;
@@ -82,7 +105,7 @@
     }
 }
 
-.footer{
+.footer {
     padding: 2rem;
     text-align: center;
     background-color: var(--color-2);
